@@ -1,4 +1,4 @@
-# 五目並べ（Gomoku）プロジェクト
+# 五目並べ（Gomoku）ゲーム
 
 ## 概要
 本プロジェクトは **Qt/C++** で実装された **五目並べ** ゲームです。  
@@ -49,7 +49,7 @@ Gomoku/
 - 人対人
 ![人対人](./image/人対人.png "人対人")
 
-# Gomoku (Five-in-a-Row) Project
+# Gomoku (Five-in-a-Row) Game
 
 ## Overview
 This project implements a **Gomoku (Five-in-a-Row)** game in **Qt/C++** with three modes:  
@@ -82,7 +82,7 @@ Gomoku/
 - Supports automatic AI vs AI play with delays for visualization
 
 
-# 五子棋（Gomoku）项目
+# 五子棋（Gomoku）游戏
 
 ## 概述
 本项目是使用 **Qt/C++** 实现的 **五子棋** 游戏。  
@@ -116,4 +116,5 @@ Gobang/
 - 可配置 AI 深度和玩家颜色  
 - AI 优先考虑获胜落子及阻止对方四连  
 - 支持 AI 对 AI 自动下棋，带落子延时便于观察
+
 
