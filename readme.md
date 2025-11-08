@@ -15,6 +15,7 @@ UIでは盤面、駒、ゲーム状態を表示し、インタラクティブに
 
 ## ファイル構成
 
+```text
 Gomoku/
 │
 ├─ main.cpp                 // アプリケーション起動ポイント  
@@ -24,7 +25,7 @@ Gomoku/
 ├─ gomoku.h                 // Gomoku クラス、盤面管理、手の処理、勝利判定、AI評価  
 ├─ settingsdialog.h         // SettingsDialog クラス、ゲームモード、AI深さ、プレイヤー色選択  
 └─ resources.qrc            // Qtリソース（アイコンや画像など、必要に応じて）
-
+```
 ---
 
 ## 機能
@@ -33,6 +34,8 @@ Gomoku/
 - AIの深さやプレイヤー色を設定可能  
 - AIは勝利手や相手の四連阻止を優先  
 - AI対AIプレイでは可視化のためのディレイ付きで自動進行
+
+---
 
 ## 実例
 - 初期画面 / 初始化界面 / Initial Page
@@ -59,7 +62,7 @@ The AI uses a simple **Negamax search** with evaluation to choose moves, includi
 ---
 
 ## File Structure
-
+```text
 Gomoku/
 │
 ├─ main.cpp                 // Entry point, launches the application  
@@ -68,7 +71,7 @@ Gomoku/
 ├─ boardwidget.h            // BoardWidget class, draws the board and pieces, handles clicks  
 ├─ gomoku.h                 // Gomoku class, manages board state, moves, win detection, AI evaluation  
 └─  settingsdialog.h         // SettingsDialog class, selects game mode, AI depth, and player color  
-
+```
 ---
 
 ## Functionality
@@ -95,7 +98,7 @@ UI 显示棋盘、棋子和游戏状态，支持交互式游戏。
 ---
 
 ## 文件架构
-
+```text
 Gobang/
 │
 ├─ main.cpp                 // 程序入口，启动应用  
@@ -104,7 +107,7 @@ Gobang/
 ├─ boardwidget.h            // BoardWidget 类，绘制棋盘和棋子，处理点击事件  
 ├─ gomoku.h                 // Gomoku 类，管理棋盘状态、落子、胜负判定、AI评估  
 └─ settingsdialog.h         // SettingsDialog 类，选择游戏模式、AI深度和玩家颜色  
-
+```
 ---
 
 ## 功能
@@ -113,5 +116,3 @@ Gobang/
 - 可配置 AI 深度和玩家颜色  
 - AI 优先考虑获胜落子及阻止对方四连  
 - 支持 AI 对 AI 自动下棋，带落子延时便于观察
-
-
