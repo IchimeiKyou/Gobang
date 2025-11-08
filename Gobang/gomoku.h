@@ -114,8 +114,8 @@ public:
         return my-opp;
     }
 
-    // 极大极小搜索（Negamax），带 alpha-beta 剪枝
-    int negamax(int depth,int alpha,int beta,int player){
+    // 极大极小搜索（Negamax）
+    int negamax(int depth,int player){
         if(depth==0) return evaluate(player);
         int best=-9999999;
         vector<pair<int,int>> cand=genCandidates(); // 获取候选落子点
@@ -123,11 +123,9 @@ public:
             int r=cand[i].first,c=cand[i].second;
             board[r][c]=player;
             if(checkWin(r,c,player)){ board[r][c]=EMPTY; return 1000000; } // 胜利剪枝
-            int val=-negamax(depth-1,-beta,-alpha,player==BLACK?WHITE:BLACK);
+            int val=-negamax(depth-1,player==BLACK?WHITE:BLACK);
             board[r][c]=EMPTY;
             if(val>best) best=val;
-            if(val>alpha) alpha=val;
-            if(alpha>=beta) break; // alpha-beta 剪枝
         }
         return best;
     }
@@ -141,7 +139,7 @@ public:
             int r=cand[i].first,c=cand[i].second;
             board[r][c]=player;
             if(checkWin(r,c,player)){board[r][c]=EMPTY;return cand[i];} // 直接胜利
-            int val=-negamax(depth-1,-999999,999999,player==BLACK?WHITE:BLACK);
+            int val=-negamax(depth-1,player==BLACK?WHITE:BLACK);
             board[r][c]=EMPTY;
             if(val>bestVal){bestVal=val;best=cand[i];}
         }
