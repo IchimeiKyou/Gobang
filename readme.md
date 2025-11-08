@@ -36,14 +36,19 @@ Gomoku/
 
 ## 実例
 - 初期画面 / 初始化界面 / Initial Page
+<br>
 ![初期画面](./image/初期画面.png "初期画面/初始化界面/Initial Page")
 - 設定画面 / 设置界面 / Setting Page
+<br>
 ![設定画面](./image/設定画面.png "設定画面/设置界面/Setting Page")
 - 人（白）対AI / 人（执白）机对局 / Human (White) vs. AI
+<br>
 ![人（白）対AI](./image/人（白）対AI.png "人（白）対AI/人（执白）机对局/Human (White) vs. AI")
 - 人（黒）対AI / 人（执黑）机对局 / Human (Black) vs. AI
+<br>
 ![人（黒）対AI](./image/人（黒）対AI.png "人（黒）対AI/人（执黑）机对局/Human (Black) vs. AI")
 - 人対人 / 人人对局 / Human vs. Human
+<br>
 ![人対人](./image/人対人.png "人対人/人人对局/Human vs. Human")
 
 # Gomoku (Five-in-a-Row) Project
@@ -113,3 +118,4 @@ Gobang/
 - 可配置 AI 深度和玩家颜色  
 - AI 优先考虑获胜落子及阻止对方四连  
 - 支持 AI 对 AI 自动下棋，带落子延时便于观察
+
